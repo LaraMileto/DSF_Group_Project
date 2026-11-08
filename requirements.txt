@@ -1,0 +1,22 @@
+
+# Data manipulation
+numpy
+pandas
+
+# Data visualization
+matplotlib
+
+# Reading Apache TsFile datasets
+tsfile
+pyarrow
+
+# Downloading datasets from Hugging Face
+huggingface_hub
+
+# Jupyter Notebook support
+jupyter
+ipykernel
+
+# Machine learning and forecasting
+scikit-learn
+statsmodels
