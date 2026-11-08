@@ -277,38 +277,9 @@ In VS Code:
 
 Make sure you do not accidentally select a global Python installation.
 
-### Step 6.2 — Check the working directory
 
-The notebook must locate the CSV file correctly.
 
-A notebook may execute from the project root or the `code/` folder, depending on the VS Code configuration.
-
-Use the following pattern to locate the project root:
-
-```python
-from pathlib import Path
-import pandas as pd
-
-project_dir = Path.cwd().resolve()
-
-if not (project_dir / "data").is_dir():
-    project_dir = project_dir.parent
-
-csv_path = (
-    project_dir
-    / "data"
-    / "processed"
-    / "freshretailnet_train.csv"
-)
-
-df = pd.read_csv(csv_path)
-
-print("Dataset shape:", df.shape)
-```
-
-If the file cannot be found, check the working directory and verify that the conversion step was completed.
-
-### Step 6.3 — Run the notebook
+### Step 6.2 — Run the notebook
 
 Select **Restart** to clear the previous kernel state, then select **Run All**.
 
